@@ -1,11 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// Allows us to render HTML to our page using JSX!
-
-//The 1st arg is WHAT u want to render
-//The 2nd arg is WHERE u want to render
-
-ReactDOM.render(
-    <h1>Hello, Everyone</h1>,
-
-    document.getElementById('root')
-);
+const element = <h1>Hello, Everyone</h1>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(element)
